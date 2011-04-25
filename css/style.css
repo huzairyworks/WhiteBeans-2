@@ -1,0 +1,528 @@
+/*
+Project's name:
+Description:
+Version:
+Author:
+Last date modified:
+
+Using MentariCSS Framework
+Get it from http://www.mentaricss.com
+Licensed under GPL
+*/
+
+/* Import external stylesheet */
+@import url('mentari.css');
+
+/* Common HTML tags */
+body
+{
+	font:80%/150% georgia,sans-serif,verdana;
+	background:#fff;
+	color:#444;
+	border-top:45px solid #eee;
+}
+
+a
+{
+	text-decoration:none;
+	color:#c23919;
+}
+
+a:hover
+{
+	color:#000;
+}
+
+/* Wrapping */
+#wrapper
+{
+	width:880px;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:50px;
+}
+
+/* Header section */
+#header
+{
+	border-bottom:3px double #eee;
+	padding:40px 0 30px 0;
+}
+
+#header h1
+{
+	font-family:"Old Standard TT", arial, verdana;
+	font-size:2.6em;
+	margin:0;
+}
+
+/* Menu */
+#menu
+{
+	border-bottom:1px solid #eee;
+}
+
+#mainnavi
+{
+	margin-top:-47px;
+}
+
+#mainnavi .current a
+{
+	background:#fff;
+	padding:8px 15px 11px 15px;
+	color:#333;
+	border-top:1px solid #ccc;
+}
+
+#mainnavi, #navi
+{
+	margin-left:-40px;
+}
+
+#mainnavi li, #navi li
+{
+	display:inline;
+	margin-right:15px;
+}
+
+#feeds li
+{
+	display:inline;
+	margin-left:15px;
+}
+
+#searchbox
+{
+	margin:-41px 0 0 0;
+	background:#fff;
+	padding:1px 10px 10px 10px;
+	border-top:1px solid #ccc;
+}
+
+#searchbox input
+{
+	width:293px;
+	border:1px solid #eee;
+	border:none;
+	border-bottom:1px solid #e5e5e5;
+	padding:3px 0 10px 0;
+}
+
+#searchbox input:focus
+{
+	border-bottom:1px solid #ccc;
+	outline:0;
+}
+
+.heading
+{
+	margin:31px 0 10px 0;
+	letter-spacing:1px;
+}
+
+/* Content section */
+#content
+{
+	width:550px;
+}
+
+.hentry
+{
+	margin-bottom:50px;
+}
+
+.entry-heading
+{
+	margin:30px 0 0 0px;
+}
+
+.entry-title
+{
+	font-family:"Old Standard TT", arial, verdana;
+	margin-bottom:0;
+}
+
+.entry-content
+{
+	text-align:justify;
+	margin-top:20px;
+}
+
+.entry-content p, .widget p
+{
+	line-height:180%;
+}
+
+.metadata
+{
+	border-top:1px solid #eee;
+	padding-top:10px;
+	margin-top:25px;
+}
+
+.breadcrumb
+{
+	border-bottom:1px solid #eee;
+	padding-bottom:9px;
+}
+
+/* Pagination */
+#pagination
+{
+	height:90px;
+}
+
+#pagination a, #flickr p a
+{
+	color:#fff;
+	background:#333;
+	background:-webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background:-moz-linear-gradient(top,  #666,  #333);
+	text-shadow:1px 1px 0px #000;
+	padding:7px 10px;
+	border:1px solid #eee;
+	border-right:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	-webkit-box-shadow:inset 0 1px 1px 0 #999;
+	-webkit-border-radius:3px;
+	border:1px solid #333;
+}
+
+#pagination a:hover
+{
+	background:#333;
+	background:-webkit-gradient(linear, left top, left bottom, from(#555), to(#222));
+	background:-moz-linear-gradient(top,  #f5f5f5,  #eee);
+}
+
+/* Sidebar section */
+#sidebar
+{
+	width:300px;
+	margin-top:20px;
+}
+
+.ads
+{
+	margin:0 8px 8px 0;
+}
+
+.widget
+{
+	background:#f5f5f5;
+	padding:3px 20px;
+	margin-bottom:20px;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	-webkit-box-shadow:-3px 3px -3px 3px #eee;
+}
+
+.widget h3
+{
+	font-size:1em;
+	font-weight:normal;
+	padding-bottom:10px;
+	border-bottom:1px solid #e5e5e5;
+}
+
+/* Footer section */
+#footer
+{
+	padding:30px 0 50px 0;
+	margin:-40px 0 0 0;
+	background:#eee;
+}
+
+#footer-content
+{
+	width:880px;
+	margin:0 auto;
+	margin-bottom:-20px;
+}
+
+.note, .note2
+{
+   position:relative;
+   overflow:hidden;
+}
+
+.note:before, .note2:before
+{
+   content:"";
+   position:absolute;
+   top:0;
+   right:0;
+   border-width:0 13px 13px 0;
+   border-style:solid;
+   border-color:#fff #fff #999 #999;
+   -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+   display:block; width:0; /* Firefox 3.0 damage limitation */
+}
+
+.note2:before
+{
+	border-color:#eee #eee #999 #999;
+}
+
+.date-box
+{
+	width:45px;
+	height:40px;
+	background:#eee;
+	padding:14px 8px 10px 8px;
+	margin:-10px 15px 0 0;
+	text-align:center;
+	font-family:georgia;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #eee);
+	text-shadow:1px 1px 0px #000;
+	-webkit-box-shadow:-3px 3px -3px 3px #eee;
+}
+
+.date-box p
+{
+	margin:0;
+	color:#fff;
+}
+
+.month
+{
+	font-size:1.1em;
+	line-height:normal;
+	text-transform:uppercase;
+}
+
+.day
+{
+	font-size:1.5em;
+	font-style:italic;
+}
+
+.entry-title
+{
+	font-size:1.8em;
+	margin-top:10px;
+}
+
+/* Featured Post */
+#featured
+{
+	padding:10px 0 20px 0;
+	margin-left:-65px;
+}
+
+.border
+{
+	border-top:1px solid #eee;
+	width:880px;
+}
+
+#featured li
+{
+	float:left;
+	display:inline;
+	margin-left:26px;
+	width:200px;
+}
+
+#featured h3
+{
+	font-size:1.3em;
+	font-weight:normal;
+	margin:8px 0 3px 65px;
+	padding-bottom:5px;
+}
+
+#featured li h3
+{
+	margin-left:0;
+	padding:0;
+}
+
+#featured p
+{
+	margin:0;
+	color:#999;
+}
+
+#featured img
+{
+	width:192px;
+	border:1px solid #eee;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	padding:3px;
+}
+
+#featured img:hover, .popular_post img:hover, #flickr img:hover
+{
+	border:1px solid #ccc;
+}
+
+/* Popular Post */
+.popular_post img, #recent_comments img
+{
+	width:50px;
+	height:50px;
+	float:left;
+	background:#fff;
+	padding:3px;
+	border:1px solid #eee;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	margin:5px 10px 10px 0;
+}
+
+.popular_post li h3, #recent_comments li h3
+{
+	border:none;
+	line-height:0;
+	padding:25px 0 0 0;
+	margin:0;
+	font-weight:normal;
+}
+
+.popular_post ul, #recent_comments ul
+{
+	margin:0;
+	padding:0;
+}
+
+.popular_post li, #recent_comments li
+{
+	list-style:none;
+	clear:left;
+	margin-bottom:20px;
+}
+
+/* Footer Content */
+#recent_comments, #about, #newsletter
+{
+	width:219px;
+	background:#f5f5f5;
+	padding:0 20px 10px 20px;
+	border:1px solid #eee;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	margin:0 30px 0 0;
+	-webkit-box-shadow:-3px 3px -3px 3px #e5e5e5;
+}
+
+#about
+{
+	margin:0;
+}
+
+#footer-content h3
+{
+	font-weight:normal;
+	border-bottom:1px solid #e5e5e5;
+	padding-bottom:10px	;
+}
+
+#recent_comments img
+{
+	margin:-10px 10px 25px 0;
+}
+
+#recent_comments ul
+{
+	margin-top:25px;
+}
+
+#recent-comments li p
+{
+	margin:0;
+	line-height:0;
+	padding:25px 0 0 0;
+}
+
+#about p
+{
+	line-height:180%;
+}
+
+#newsletter
+{
+	width:260px;
+	margin:0;
+}
+
+#flickr ul
+{
+	margin-left:-50px;
+}
+
+#flickr li
+{
+	display:inline;
+	margin:0 0 0 10px;
+}
+
+#flickr img
+{
+	width:70px;
+	height:70px;
+	padding:3px;
+	border:1px solid #eee;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	background:#fff;
+	margin-bottom:10px;
+}
+
+.user_avatar
+{
+	width:80px;
+	height:80px;
+	padding:3px;
+	border:1px solid #eee;
+	border-left:1px solid #e5e5e5;
+	border-bottom:1px solid #e5e5e5;
+	background:#fff;
+	margin:0 10px 0 0;
+}
+
+#copyright
+{
+	border-top:3px double #e5e5e5;
+	margin-top:40px;
+	padding-top:15px;
+}
+
+#copyright li
+{
+	display:inline;
+	margin-left:10px;
+}
+
+#copyright ul
+{
+	margin:0 0 0 -40px;
+}
+
+#copytext
+{
+	margin-top:-10px;
+}
+
+#facebook
+{
+	background:url(../images/facebook.png) no-repeat 0 0;
+	padding:1px 0 0 20px;
+}
+
+#twitter
+{
+	background:url(../images/twitter.png) no-repeat 0 0;
+	padding:1px 0 0 20px;
+}
+
+#rssfeed
+{
+	background:url(../images/feed.png) no-repeat 0 0;
+	padding:1px 0 0 20px;
+}
